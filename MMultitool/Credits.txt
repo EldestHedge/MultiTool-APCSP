@@ -1,4 +1,14 @@
 Lucas Brattinga
-Programed the Calculator, the mortgage calculator, help page and credits page.
+[Programed]
+Calculator 
+Mortgage Calculator
+MainMenue
+	idea inspired by a thread on stackoverflow https://stackoverflow.com/questions/19964603/creating-a-menu-in-python
+Help and Credits page.
+
 
 Cameron Lewis
+[Programmed]
+Meal price calculator
+Area of shapes calculator 
+Unit convirter.
