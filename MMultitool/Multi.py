@@ -1,18 +1,24 @@
 #Mathamatical multitool
 #Made by Lucas Brattinga and in collaboration with Cameron Lewis
-print("")
-print(" ~~~~~~~~~~~~~~~~~~~~~~~~ ")
-print("   M th m ti  l Multitool ")
-print("    X  X X  .X            ")
-print("    X  X X  .X            ")
-print("    .  X .  ..            ")
-print("    .  X .  ..            ")
-print("    .  X .  ..            ")
-print("    .  . .  ..            ")
-print("                          ")
-print("  Mathematical Multitool  ")
-print("    By: Lucas Brattinga   ")
-print(" ~~~~~~~~~~~~~~~~~~~~~~~~ ")
+import os
+
+def Main():
+
+    print("")
+    print(" ~~~~~~~~~~~~~~~~~~~~~~~~ ")
+    print("   M th m ti  l Multitool ")
+    print("    X  X X  .X            ")
+    print("    X  X X  .X            ")
+    print("    .  X .  ..            ")
+    print("    .  X .  ..            ")
+    print("    .  X .  ..            ")
+    print("    .  . .  ..            ")
+    print("                          ")
+    print("  Mathematical Multitool  ")
+    print("    By: Lucas Brattinga   ")
+    print(" ~~~~~~~~~~~~~~~~~~~~~~~~ ")
+
+Main()
 
 class MainMenu():
     def MMenu():
@@ -31,7 +37,6 @@ class MainMenu():
         for row in choice:
                 print (row, menu[row])
     MMenu()
-
     multi = 0
 
     selection = input("Choose an option: ")
@@ -40,46 +45,49 @@ class MainMenu():
 
         if selection == "1":
                 multi = 1
-                print("[Unit Convirter]")
+                os.system('cls')
                 break
         elif selection == "2":
                 multi = 2
-                print("[Basic Calculator] ")
+                os.system('cls')
                 break
         elif selection == "3":
                 multi = 3
-                print(" [Mortgage Calculator] ")
+                os.system('cls')
                 break
         elif selection == "4":
                 multi = 4
-                print(" [Area of Shapes]")
+                os.system('cls')
                 break
         elif selection == "5":
                 multi = 5
-                print("[Meal Price]")
+                os.system('cls')
                 break
         elif selection == "6":
                 multi = 6
-                print("                        ~~~~~[Help]~~~~~")
+                os.system('cls')
                 break
         elif selection == '7':
-                print("[Credits]")
+                os.system('cls')
                 multi = 7
-                break
-        elif selection == '8':
-                multi = 8
                 break
         else:
                 print("[!]Error unknown input")
+                os.system('cls')
+                input()
+                MMenu()
                 break
+
 MainMenu()
 
 if MainMenu.multi == 1:
-    print("In developement")
-
-
+    Main()
+    print("[Unit Convirter]")
+    input()
 
 elif MainMenu.multi == 2:
+    Main()
+    print("     [Basic Calculator] ")
         #Basic Calculator V1
     def CalculatorScript():
         print("[1] Addition")
@@ -124,28 +132,37 @@ elif MainMenu.multi == 2:
             print (Topporator.subtr(float(num1),float(num2)))
 
         elif opporation == '5':
-            MainMenu()
+                os.system('cls')
+                Main()
+                MainMenu.MMenu()
+                #working back button^
         else:
             print ("")
             print ("[!]Error")
             print ("")
+            input()
+            os.system('cls')
+            Main()
+            print("     [Basic Calculator] ")
             CalculatorScript()
     CalculatorScript()
 
 
 elif MainMenu.multi == 3:
-    print("In developement")
+    print(" [Mortgage Calculator] ")
 
 elif MainMenu.multi == 4:
-    print("In developement")
-
+    print(" [Area of Shapes]")
 elif MainMenu.multi == 5:
-    print("In developement")
+    print("[Meal Price]")
 
 elif MainMenu.multi == 6:
+    print("                        ~~~~~[Help]~~~~~")
     helptxt = open("Help.txt")
     print(helptxt.read())
+    input()
 
 elif MainMenu.multi == 7:
+    print("[Credits]")
     credits_txt = open("Credits.txt")
     print(credits_txt.read())
