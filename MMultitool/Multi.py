@@ -1,9 +1,9 @@
 #Mathamatical multitool
 #Made by Lucas Brattinga and in collaboration with Cameron Lewis
+
 import os
 
 def Main():
-
     print("")
     print(" ~~~~~~~~~~~~~~~~~~~~~~~~ ")
     print("   M th m ti  l Multitool ")
@@ -17,7 +17,6 @@ def Main():
     print("  Mathematical Multitool  ")
     print("    By: Lucas Brattinga   ")
     print(" ~~~~~~~~~~~~~~~~~~~~~~~~ ")
-
 Main()
 
 class MainMenu():
@@ -26,18 +25,16 @@ class MainMenu():
         menu = {}
         menu["[1]"] = ("Unit Convirter")
         menu["[2]"] = ("Calculator")
-        menu["[3]"] = ("Mortgage Calculator")
-        menu["[4]"] = ("Area of Shapes")
-        menu["[5]"] = ("Meal Price")
-        menu["[6]"] = ("Help")
-        menu["[7]"] = ("Credits")
-        menu["[8]"] = ("Exit")
+        menu["[3]"] = ("Area of Shapes")
+        menu["[4]"] = ("Meal Price")
+        menu["[5]"] = ("Help")
+        menu["[6]"] = ("Credits")
+        menu["[7]"] = ("Exit")
 
         choice = menu.keys()
         for row in choice:
                 print (row, menu[row])
     MMenu()
-    multi = 0
 
     selection = input("Choose an option: ")
 
@@ -63,27 +60,20 @@ class MainMenu():
                 multi = 5
                 os.system('cls')
                 break
-        elif selection == "6":
+        elif selection == '6':
+                os.system('cls')
                 multi = 6
-                os.system('cls')
-                break
-        elif selection == '7':
-                os.system('cls')
-                multi = 7
                 break
         else:
                 print("[!]Error unknown input")
                 os.system('cls')
-                input()
-                MMenu()
                 break
-
 MainMenu()
 
 if MainMenu.multi == 1:
     Main()
     print("[Unit Convirter]")
-    input()
+
 
 elif MainMenu.multi == 2:
     Main()
@@ -135,6 +125,7 @@ elif MainMenu.multi == 2:
                 os.system('cls')
                 Main()
                 MainMenu.MMenu()
+                MainMenu()
                 #working back button^
         else:
             print ("")
@@ -147,22 +138,21 @@ elif MainMenu.multi == 2:
             CalculatorScript()
     CalculatorScript()
 
-
 elif MainMenu.multi == 3:
-    print(" [Mortgage Calculator] ")
+    Main()
+    print(" [Area of Shapes]")
 
 elif MainMenu.multi == 4:
-    print(" [Area of Shapes]")
-elif MainMenu.multi == 5:
+    Main()
     print("[Meal Price]")
 
-elif MainMenu.multi == 6:
+elif MainMenu.multi == 5:
     print("                        ~~~~~[Help]~~~~~")
     helptxt = open("Help.txt")
     print(helptxt.read())
     input()
 
-elif MainMenu.multi == 7:
+elif MainMenu.multi == 6:
     print("[Credits]")
     credits_txt = open("Credits.txt")
     print(credits_txt.read())

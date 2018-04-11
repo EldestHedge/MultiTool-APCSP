@@ -3,21 +3,33 @@
 --------------------------------------------------------------------------------------------------------
 [2] Calculator
 The simple calculator can be used to calculate 2 float numbers at a time.
-the options are either-
+The options are-
 	[1]Addition
 	[2]Subtraction
 	[3]Multiplication
 	[4]Division
-	[5]Back
-The caculator will ask for the two numbers and depedning on the opporatior selected a calulated answere 
+The caculator will ask for the two numbers and depedning on the opporatior selected a calulated answer
 will be given.
 ---------------------------------------------------------------------------------------------------------
-[3] Mortgage calculator
-[!]In Development
+[3] Area of shapes
+The Area of shapes calculator can find the area, perimeter, circumference and volume of shapes.
+The options are-
+	[1]Perimeter of a square/rectangle
+	[2]Volume of a box
+	[3]Area of a circle
+	[4]Area of square/rectangle
+	[5]Circumference of a circle
+	[6]Area of a trapezoid
+	[7]Area of a cylinder
+After seleting one of the options a prompt will ask for the appropriate input. After inputing the numbers
+the program will correctly calculate the area, perimeter, circumference and volume of shapes.
 ---------------------------------------------------------------------------------------------------------
-[4] Area of shapes
-[!]In Development
----------------------------------------------------------------------------------------------------------
-[5] Meal price calculator
-[!]In Development
+[4] Meal price calculator
+The Meal price clalculator can be used to caluclate the total cost of a purchase.
+The input needed is-
+	[1]Subtotal
+	[2]Tip percentage
+	 
+After the the input has been entered the subtotal, tax, tip and total price will be printed on the screen
+(DO NOT USE DOLLAR "$" SIGNS)
 ---------------------------------------------------------------------------------------------------------
