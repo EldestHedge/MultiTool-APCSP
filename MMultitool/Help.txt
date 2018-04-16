@@ -1,5 +1,15 @@
-[1] Unit Converter
-[!]In Development
+[1] Temperature Converter
+User will be asked which conversion they would like to make
+Options are:
+	[1]Celsius to Fahrenheit
+	[2]Celsius to Kelvin
+	[3]Fahrenheit to Celsius
+	[4]Fahrenheit to Kelvin
+	[5]Kelvin to Celsius
+	[6]Kelvin to Fahrenheit
+After selecting an option, the user must input the degrees of the unit of temperature that 
+is known, and the program will output the unknown amount in the correct unit of temperature.
+[!] Not fully funcitonal
 --------------------------------------------------------------------------------------------------------
 [2] Calculator
 The simple calculator can be used to calculate 2 float numbers at a time.
@@ -20,7 +30,6 @@ The options are-
 	[4]Area of square/rectangle
 	[5]Circumference of a circle
 	[6]Area of a trapezoid
-	[7]Area of a cylinder
 After seleting one of the options a prompt will ask for the appropriate input. After inputing the numbers
 the program will correctly calculate the area, perimeter, circumference and volume of shapes.
 ---------------------------------------------------------------------------------------------------------
