@@ -33,40 +33,39 @@ class MainMenu():
 
         choice = menu.keys()
         for row in choice:
-                print (row, menu[row])
+            print (row, menu[row])
     MMenu()
 
-    def SelectionProcess():
-        selection = input("Choose an option: ")
-        #multi = 0
-        if selection == "1":
-            multi = 1
-            global multi
+    selection = input("Choose an option: ")
+
+    if selection == "1":
+        multi = 1
+
+        os.system('cls')
+    elif selection == "2":
+        multi = 2
+
+        os.system('cls')
+    elif selection == "3":
+        multi = 3
+
+        os.system('cls')
+    elif selection == "4":
+        multi = 4
+
+        os.system('cls')
+    elif selection == "5":
+        multi = 5
+
+        os.system('cls')
+    elif selection == '6':
+        multi = 6
+        os.system('cls')
+
+    else:
+            print("[!]Error unknown input")
             os.system('cls')
-        elif selection == "2":
-            multi = 2
-            global multi
-            os.system('cls')
-        elif selection == "3":
-            multi = 3
-            global multi
-            os.system('cls')
-        elif selection == "4":
-            multi = 4
-            global multi
-            os.system('cls')
-        elif selection == "5":
-            multi = 5
-            global multi
-            os.system('cls')
-        elif selection == '6':
-            multi = 6
-            os.system('cls')
-            global multi
-        else:
-                print("[!]Error unknown input")
-                os.system('cls')
-    SelectionProcess()
+
 
 MainMenu()
 
@@ -80,18 +79,18 @@ elif MainMenu.multi == 2:
     print("     [Basic Calculator] ")
         #Basic Calculator V1
     def CalculatorScript():
-        
+
         menu = {}
         menu["[1]"] = ("Addition")
         menu["[2]"] = ("Subtraction")
         menu["[3]"] = ("Multiplication")
         menu["[4]"] = ("Division")
         menu["[5]"] = ("Back")
-        
+
         choice = menu.keys()
         for row in choice:
                 print (row, menu[row])
-                
+
         class Topporator:
             def add(x,y):
                 return x + y
@@ -108,24 +107,24 @@ elif MainMenu.multi == 2:
         opporation = input("Choose an option: ")
 
         if opporation == '1':
-            num1 = input("Number1: ")
-            num2 = input("Number2: ")
-            print (Topporator.add(float(num1),float(num2)))
+            Value1 = input("Number1: ")
+            Value2 = input("Number2: ")
+            print (Topporator.add(float(Value1),float(Value2)))
 
         elif opporation == '2':
-            num1 = input("Number1: ")
-            num2 = input("Number2: ")
-            print (Topporator.subtract(float(num1),float(num2)))
+            Value1 = input("Number1: ")
+            Value2 = input("Number2: ")
+            print (Topporator.subtract(float(Value1),float(Value2)))
 
         elif opporation == '3':
-            num1 = input("Number1: ")
-            num2 = input("Number2: ")
-            print (Topporator.multi(float(num1),float(num2)))
+            Value1 = input("Number1: ")
+            Value2 = input("Number2: ")
+            print (Topporator.multi(float(Value1),float(Value2)))
 
         elif opporation == '4':
-            num1 = input("Number1: ")
-            num2 = input("Number2: ")
-            print (Topporator.subtr(float(num1),float(num2)))
+            Value1 = input("Number1: ")
+            Value2 = input("Number2: ")
+            print (Topporator.subtr(float(Value1),float(Value2)))
 
         elif opporation == '5':
                 os.system('cls')
