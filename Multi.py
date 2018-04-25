@@ -80,12 +80,18 @@ elif MainMenu.multi == 2:
     print("     [Basic Calculator] ")
         #Basic Calculator V1
     def CalculatorScript():
-        print("[1] Addition")
-        print("[2] Subtraction")
-        print("[3] Multiplication")
-        print("[4] Division")
-        print("[5] Back")
-
+        
+        menu = {}
+        menu["[1]"] = ("Addition")
+        menu["[2]"] = ("Subtraction")
+        menu["[3]"] = ("Multiplication")
+        menu["[4]"] = ("Division")
+        menu["[5]"] = ("Back")
+        
+        choice = menu.keys()
+        for row in choice:
+                print (row, menu[row])
+                
         class Topporator:
             def add(x,y):
                 return x + y
